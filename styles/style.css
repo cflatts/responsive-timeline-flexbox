@@ -1,7 +1,67 @@
-.moment {
+* {
+    box-sizing: border-box;
+    font-size: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
     display: flex;
     flex-direction: row;
-    width: 40%;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+i.material-icons {
+    font-size: 48px;
+}
+
+.moment {
+    width: 80%;
+    /*border: 3px solid purple;*/
+    margin: 2% auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.event {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.description {
+    border-radius: 20%;
     border: 3px solid purple;
+    padding: 2%;
+    display: inline-block;
+    width: 65%;
+    background-color: lightgrey;
+}
+
+p {
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+
+    .event {
+        display: block;
+        width: 100%;
+    }
+
+    .description {
+        display: block;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+
+    i.material-icons {
+        display: inline-block;
+        font-size: 24px;
+        padding-left: 40px;
+    }
 }
