@@ -1,0 +1,7 @@
+.moment {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: auto;
+    border: 3px solid purple;
+}
